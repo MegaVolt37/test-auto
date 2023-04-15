@@ -1,9 +1,24 @@
 <template>
   <div :class="[{ 'hidden': loading }, 'gallery']">
-    <div v-masonry="containerId" class="grid" stagger="0.03s" destroy-delay="0" transition-duration="0.3s"
-      item-selector=".grid__item">
-      <div v-for="(image, index) in images" :key="index" v-masonry-tile class="grid__item">
-        <img :src="image" alt="" class="grid__item-img">
+    <div
+      v-masonry="containerId"
+      class="grid"
+      stagger="0.03s"
+      destroy-delay="0"
+      transition-duration="0.3s"
+      item-selector=".grid__item"
+    >
+      <div
+        v-for="(image, index) in images"
+        :key="index"
+        v-masonry-tile
+        class="grid__item"
+      >
+        <img
+          :src="image"
+          alt=""
+          class="grid__item-img"
+        >
       </div>
     </div>
   </div>

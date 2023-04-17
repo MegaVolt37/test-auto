@@ -68,7 +68,7 @@ export default {
       loading: false,
     };
   },
-  async mounted() {
+  mounted() {
     this.loading = true;
     window.onload = () => {
       this.loading = false;
